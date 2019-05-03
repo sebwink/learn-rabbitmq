@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  python-producer:
+    volumes:
+      - '../../pyp/src:/app/src'
+    environment:
+      PYP_RABBITMQ_VHOST: devhost
+      PYP_RABBITMQ_USER: user 
+      PYP_RABBITMQ_PASS: secret

@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  python-producer:
+    image: sebwink/rabbitmq-hello-pyp 
+    build:
+      context: '../../pyp'
+    environment:
+      PYP_INTERVAL: 5

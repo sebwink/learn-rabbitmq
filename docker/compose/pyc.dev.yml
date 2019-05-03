@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  python-consumer:
+    volumes:
+      - '../../pyc/src:/app/src'
+    environment:
+      PYC_RABBITMQ_VHOST: devhost
+      PYC_RABBITMQ_USER: user 
+      PYC_RABBITMQ_PASS: secret
